@@ -1,0 +1,34 @@
+Portfolio image paths
+=====================
+
+All paths are under the "public" folder so they are served from the site root.
+
+1. Profile photos (Hero + About section)
+   - public/assets/images/methusala.jpeg  → Hero and About
+   - public/assets/images/image.png      → About section (second photo)
+
+2. Project screenshots
+   Use one folder per project with a file named image.png inside:
+
+   public/assets/images/pickngo/image.png
+   public/assets/images/fitness/image.png
+   public/assets/images/OnaWadak/image.png
+   public/assets/images/zenmind/image.png
+   public/assets/images/ecommerce/image.png
+   public/assets/images/libraryms/image.png
+   public/assets/images/cookingAss/image.png
+   public/assets/images/gym/image.png
+   public/assets/images/skillsharing/image.png
+   public/assets/images/foodmart/image.png
+   public/assets/images/beecyfashion/image.png
+   public/assets/images/savetherocket/image.png
+   public/assets/images/mynotes/image.png
+   public/assets/images/exam/image.png
+   public/assets/images/tourism/image.png
+
+   (AI Shopping Agent: add public/assets/images/ai-shopping-agent/image.png if you have one.)
+
+   If image.png is missing in a folder, the app shows a placeholder with the project name.
+
+3. CV (optional)
+   public/cv.pdf  → "Download CV" button in Hero links to /cv.pdf.
