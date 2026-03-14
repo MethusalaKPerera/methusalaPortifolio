@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default: dark theme (before React or when class is "dark") */
+html {
+  --color-bg: 2 6 23;
+  --color-bg-elevated: 15 23 42;
+  --color-text: 248 250 252;
+  --color-text-muted: 148 163 184;
+  --color-border: 51 65 85;
+  --color-accent: 251 191 36;
+  --color-accent-muted: 245 158 11;
+  --color-accent-glow: rgba(251, 191, 36, 0.2);
+  --color-card: 30 41 59;
+  --color-card-hover: 51 65 85;
+}
+
+/* Theme: light */
+html.light {
+  --color-bg: 248 250 252;
+  --color-bg-elevated: 255 255 255;
+  --color-text: 15 23 42;
+  --color-text-muted: 71 85 105;
+  --color-border: 226 232 240;
+  --color-accent: 217 119 6;
+  --color-accent-muted: 245 158 11;
+  --color-accent-glow: rgba(217, 119, 6, 0.25);
+  --color-card: 255 255 255;
+  --color-card-hover: 241 245 249;
+}
+
+/* Theme: dark (explicit, same as default) */
+html.dark {
+  --color-bg: 2 6 23;
+  --color-bg-elevated: 15 23 42;
+  --color-text: 248 250 252;
+  --color-text-muted: 148 163 184;
+  --color-border: 51 65 85;
+  --color-accent: 251 191 36;
+  --color-accent-muted: 245 158 11;
+  --color-accent-glow: rgba(251, 191, 36, 0.2);
+  --color-card: 30 41 59;
+  --color-card-hover: 51 65 85;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', system-ui, sans-serif;
+  @apply antialiased;
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-bg-elevated));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-accent) / 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-accent) / 0.6);
+}
+
+/* Gradient text - amber/gold, works in both themes */
+.gradient-text {
+  background: linear-gradient(135deg, rgb(var(--color-accent-muted)) 0%, rgb(var(--color-accent)) 50%, rgb(var(--color-accent-muted)) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Card base - theme aware */
+.card-base {
+  background-color: rgb(var(--color-card));
+  border: 1px solid rgb(var(--color-border) / 0.6);
+  box-shadow: 0 4px 24px -4px rgba(0,0,0,0.08);
+}
+
+.dark .card-base {
+  box-shadow: 0 4px 24px -4px rgba(0,0,0,0.35), 0 0 0 1px rgb(255 255 255 / 0.06);
+}
+
+.card-base:hover {
+  border-color: rgb(var(--color-accent) / 0.4);
+  background-color: rgb(var(--color-card-hover));
+}
