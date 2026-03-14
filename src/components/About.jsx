@@ -46,7 +46,7 @@ export default function About() {
             <div className="relative">
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-amber-400/40 to-amber-600/30 blur-xl dark:from-amber-400/30 dark:to-amber-500/20 animate-pulse" />
               <motion.img
-                src="/assets/images/image.png"
+                src="./assets/images/image.png"
                 alt="Profile Presentation"
                 animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}

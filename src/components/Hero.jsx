@@ -74,7 +74,7 @@ export default function Hero() {
               <ChevronDown className="h-4 w-4 rotate-[-90deg]" />
             </a>
             <a
-              href="/Methusala_Perera_Frontend_Developer_CV.pdf"
+              href="./Methusala_Perera_Frontend_Developer_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-xl border border-slate-300 dark:border-white/30 bg-white/80 dark:bg-white/5 px-5 py-2.5 font-medium text-slate-800 dark:text-white backdrop-blur transition hover:bg-slate-100 dark:hover:bg-white/10 sm:px-6 sm:py-3"
@@ -110,7 +110,7 @@ export default function Hero() {
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-amber-400/30 to-amber-600/20 blur-xl dark:from-amber-400/25 dark:to-amber-500/15" />
             <div className="relative h-56 w-56 sm:h-64 sm:w-64 md:h-80 md:w-80">
               <img
-                src="/assets/images/methusala.jpeg"
+                src="./assets/images/methusala.jpeg"
                 alt="Methusala Perera"
                 className="relative h-full w-full rounded-2xl object-cover shadow-2xl ring-2 ring-slate-200 dark:ring-white/20"
                 onError={(e) => {
